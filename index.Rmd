@@ -62,7 +62,7 @@ ALERT - READ ME
 
 Now, download the phylogenetic tree from [here](https://www.dropbox.com/s/ft731tm7lmtkc7c/dataset1.aln.nwk?dl=0){target="_blank"} , and a meta-data file with information on the geographic location from [here](https://www.dropbox.com/s/xjxldv8ds0wai40/geog_loc_microreact.csv?dl=0){target="_blank"} .
 
-* Navigate to https://microreact.org/upload{target="_blank"}  and upload the `dataset1.aln.nwk` file and the `geog_loc_microreact.csv` file. The microreact interface is hopefully quite intuitive, spend a few minutes becoming familiar with the various options and buttons. Microreact is an ideal way to investigate relationships between phylogeny and geography (aka phylogeographical relationships). 
+* Navigate to [here](https://microreact.org/upload){target="_blank"}  and upload the `dataset1.aln.nwk` file and the `geog_loc_microreact.csv` file. The microreact interface is hopefully quite intuitive, spend a few minutes becoming familiar with the various options and buttons. Microreact is an ideal way to investigate relationships between phylogeny and geography (aka phylogeographical relationships). 
 
 **Question/task 6:** Identify the Haiti outbreak genomes in the tree. 
 
