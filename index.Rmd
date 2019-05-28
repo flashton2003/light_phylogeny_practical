@@ -54,7 +54,9 @@ Here is the pairwise SNP distance histogram for the genomes in our current colle
 
 <div class="alert alert-info">
 ALERT - READ ME
+
 * At this point, you have to imagine that you've run an IQ-TREE command to 'convert' your sequence files into a phylogenetic tree.
+
 * In the interests of simplicity, I've done this for you and you can download the finished tree from below
 </div>
 
@@ -106,7 +108,9 @@ Therefore, you have decided to search the public databases for all sequences fro
 
 <div class="alert alert-info">
 ALERT - READ ME
+
 * I've processed some additional genomic datasets and combined them with intial set you've been working with.
+
 * I then re-calculated a new phylogenetic tree from this larger dataset.
 </div>
 
