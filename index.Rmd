@@ -4,11 +4,6 @@ author: "Philip Ashton"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 ---
 
-<style>
-body {
-text-align: justify}
-</style>
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
