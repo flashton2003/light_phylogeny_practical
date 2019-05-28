@@ -1,22 +1,10 @@
 name: "Training"
 output_dir: "docs"
 navbar:
-  title: "OUCRU-MORU bioinformatics workshop"
+  title: "Light phylogeny practical"
   left:
     - text: "Home"
       href: index.html
-    - text: "Day 1"
-      href: Day1.html    
-    - text: "Day 2"
-      href: Day2.html
-    - text: "Day 3"
-      href: Day3.html
-    - text: "Day 4"
-      href: Day4.html
-    - text: "Day 5"
-      href: Day5.html
-    - text: "Answers"
-      href: answers.html 
 output:
   html_document:
     css: style.css

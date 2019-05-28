@@ -1,5 +1,5 @@
 ---
-title: "Outbreak practical"
+title: "Light phylogeny practical"
 author: "Philip Ashton"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 ---
@@ -36,42 +36,9 @@ From using Google, or your microbiology knowledge about cholera:
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-On your CLIMB instance:
+Here is the pairwise SNP distance histogram for the genomes in our current collection:
 
-* Navigate to `/home/ubuntu/data/day-4/outbreak_practical/dataset1`. 
-
-* Run in this directory. This directory contains the alignment of all the high quality variable sites found in the core genome for 19 *V. cholera* genomes from Haiti and 21 other *V. cholera* genomes from around the world by `snippy-core`.
-
-<pre class="bash">
-ls -lh
-</pre>
-
-* Calculate the pairwise SNP distance between all the isolates and plot the distribution as a histogram, using the following command: 
-
-<pre class="bash">
-disty dataset1.aln | python ~/scripts/process_disty_output.py | histogram.py -b 30 --percentage
-
-</pre>
-
-The `process_disty_output.py` script is available [here](https://gist.github.com/flashton2003/6518a4a877f5a1dae781c75ff02c57a1). The `histogram.py` script is from [this](https://github.com/bitly/data_hacks) package.
-
-**Question 3:** How many processes are happening in this command? 
-
-<textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
-
-<div class="toggle"><button>Hint</button>
-The `|` character is the unix command for ‘piping’ data between different processes.
-</div><br>
-
-**Question 4:** What does each stage of the process do? 
-
-<textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
-
-<div class="toggle"><button>Hint</button>
-Run the different processes of the command, building up to the full command.
-</div><br>
-
-**Bonus question:** If you know any python, can you figure out what each line of `process_disty_output.py` is doing?
+INSERT HISTOGRAM/OUTPUT OF HISTO.PY
 
 **Question 5:** What is the median pairwise SNP distance? How well do you think this describes the dataset?
 
@@ -85,25 +52,9 @@ Run the different processes of the command, building up to the full command.
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-* At this step, you will run IQ-TREE to generate a Maximum Likelihood tree. By default IQ-TREE will also test a wide range of nucleotide substitution models to see which best fits the data. For larger alignments this can be a very time consuming step, so if speed is important, it might make sense to omit this step and use a general model (e.g. GTR). You can find more information about how to run a specific model by looking at `iqtree -h`.
+THE NEXT STEP IS TO DOWNLOAD THE TREE FILE FROM HERE.
 
-* Now run the below
-
-<pre class="bash">
-iqtree -s dataset1.aln -nt AUTO
-</pre>
-
-**Question 8:** Read the IQTREE output, which model was selected as the best? What is the full name of the model? I.e. what do the initials stand for?
-
-<textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
-
-<div class="alert alert-info">
-The output of IQTREE is available in the file which ends `.log`.
-</div>
-
-**Question 9:** How many threads were selected as best? Why might the maximum number of threads not be selected?
-
-<textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
+I have run a piece of software, IQ-TREE, to generate a Maximum Likelihood tree. By default IQ-TREE will also test a wide range of nucleotide substitution models to see which best fits the data. For larger alignments this can be a very time consuming step, so if speed is important, it might make sense to omit this step and use a general model (e.g. GTR). You can find more information about how to run a specific model by looking at `iqtree -h`.
 
 * Download the tree (the file you want is the one which ends in `.treefile`) to your local computer with `Filezilla`. You should also download the `geog_loc_microreact.csv` file. **Change the file extension of the tree file to `.nwk`.**
 
