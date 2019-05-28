@@ -1,0 +1,32 @@
+name: "Training"
+output_dir: "docs"
+navbar:
+  title: "OUCRU-MORU bioinformatics workshop"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Day 1"
+      href: Day1.html    
+    - text: "Day 2"
+      href: Day2.html
+    - text: "Day 3"
+      href: Day3.html
+    - text: "Day 4"
+      href: Day4.html
+    - text: "Day 5"
+      href: Day5.html
+    - text: "Answers"
+      href: answers.html 
+output:
+  html_document:
+    css: style.css
+    theme: flatly
+    highlight: tango
+    toc: yes
+    toc_depth: 1
+    number_sections: yes
+    toc_float: yes
+    fig_width: 7
+    fig_height: 6
+    fig_caption: yes
+    self_contained: yes
