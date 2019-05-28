@@ -12,13 +12,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. Be able to interpret SNP distance histograms.
 
-2. Be able to build phylogenetic trees from snippy output.
+2. Be able to interpret phylogenetic trees for epidemiological purposes.
 
-3. Be able to interpret phylogenetic trees for epidemiological purposes.
+3. Be familiar with various tree visualisation options.
 
-4. Be familiar with various tree visualisation options.
-
-5. Have a grasp on the relationship between trees and SNPs.
+4. Have a grasp on the relationship between trees and SNPs.
 
 # Part 1 {-}
 
@@ -60,9 +58,9 @@ ALERT - READ ME
 * In the interests of simplicity, I've done this for you and you can download the finished tree from below
 </div>
 
-Now, download the phylogenetic tree from [here](https://www.dropbox.com/s/ft731tm7lmtkc7c/dataset1.aln.nwk?dl=0){target="_blank"} , and a meta-data file with information on the geographic location from [here](https://www.dropbox.com/s/xjxldv8ds0wai40/geog_loc_microreact.csv?dl=0){target="_blank"} .
+* Now, download the phylogenetic tree from [here](https://www.dropbox.com/s/ft731tm7lmtkc7c/dataset1.aln.nwk?dl=0){target="_blank"} , and a meta-data file with information on the geographic location from [here](https://www.dropbox.com/s/xjxldv8ds0wai40/geog_loc_microreact.csv?dl=0){target="_blank"} .
 
-* Navigate to [here](https://microreact.org/upload){target="_blank"}  and upload the `dataset1.aln.nwk` file and the `geog_loc_microreact.csv` file. The microreact interface is hopefully quite intuitive, spend a few minutes becoming familiar with the various options and buttons. Microreact is an ideal way to investigate relationships between phylogeny and geography (aka phylogeographical relationships). 
+* We are going to use Microreact to visualise the tree and associated metadata. Navigate to [here](https://microreact.org/upload){target="_blank"}  and upload the `dataset1.aln.nwk` file and the `geog_loc_microreact.csv` file. The Microreact interface is hopefully quite intuitive, spend a few minutes becoming familiar with the various options and buttons. Microreact is an ideal way to investigate relationships between phylogeny and geography (aka phylogeographical relationships). 
 
 **Question/task 6:** Identify the Haiti outbreak genomes in the tree. 
 
