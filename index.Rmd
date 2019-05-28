@@ -1,5 +1,5 @@
 ---
-title: "Light phylogeny practical"
+title: "Genomic epidemiology practical (no command line version)"
 author: "Philip Ashton"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 ---
@@ -40,27 +40,28 @@ Here is the pairwise SNP distance histogram for the genomes in our current colle
 
 ![SNP pairwise-distance histogram](https://imgur.com/KDGGsue.png)
 
-**Question 5:** What is the median pairwise SNP distance? How well do you think this describes the dataset?
+**Question 3:** What is the median pairwise SNP distance? How well do you think this describes the dataset?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-**Question 6: ** What does the histogram tell you about the relatedness of the samples in your dataset?
+**Question 4: ** What does the histogram tell you about the relatedness of the samples in your dataset?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-**Question 7:**  Why are there 780 ‘samples’ in the output?
+**Question 5:**  Why are there 780 ‘samples’ in the output?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-THE NEXT STEP IS TO DOWNLOAD THE TREE FILE FROM HERE.
+<div class="alert alert-info">
+* At this point, you have to imagine that you've run an IQ-TREE command to 'convert' your sequence files into a phylogenetic tree.
+* In the interests of simplicity, I've done this for you and you can download the finished tree from below
+</div>
 
-I have run a piece of software, IQ-TREE, to generate a Maximum Likelihood tree. By default IQ-TREE will also test a wide range of nucleotide substitution models to see which best fits the data. For larger alignments this can be a very time consuming step, so if speed is important, it might make sense to omit this step and use a general model (e.g. GTR). You can find more information about how to run a specific model by looking at `iqtree -h`.
-
-* Download the tree (the file you want is the one which ends in `.treefile`) to your local computer with `Filezilla`. You should also download the `geog_loc_microreact.csv` file. **Change the file extension of the tree file to `.nwk`.**
+Now, download the phylogenetic tree from [here](https://www.dropbox.com/s/ft731tm7lmtkc7c/dataset1.aln.nwk?dl=0), and a meta-data file with information on the geographic location from [here](https://www.dropbox.com/s/xjxldv8ds0wai40/geog_loc_microreact.csv?dl=0).
 
 * Navigate to https://microreact.org/upload and upload the `dataset1.aln.nwk` file and the `geog_loc_microreact.csv` file. The microreact interface is hopefully quite intuitive, spend a few minutes becoming familiar with the various options and buttons. Microreact is an ideal way to investigate relationships between phylogeny and geography (aka phylogeographical relationships). 
 
-**Question/task 10:** Identify the Haiti outbreak genomes in the tree. 
+**Question/task 6:** Identify the Haiti outbreak genomes in the tree. 
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
@@ -72,7 +73,7 @@ They are **most** of the non-black tips.
 
 <center>![](images/tree_settings.png)</center>
 
-**Question 11:** Are the isolates from Haiti a monophyletic group?
+**Question 7:** Are the isolates from Haiti a monophyletic group?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
@@ -80,7 +81,7 @@ They are **most** of the non-black tips.
 Remember - a monophyletic group is a group which consists of all the descendents of a common ancestor.
 </div><br>
 
-**Question 12:** Is there phylogeographical signal in the *V. cholerae* genomes from **within** Haiti? You will have to zoom in on Haiti to see this. I.e. are the isolates from different regions of Haiti genetically distinct from each other?
+**Question 8:** Is there phylogeographical signal in the *V. cholerae* genomes from **within** Haiti? You will have to zoom in on Haiti to see this. I.e. are the isolates from different regions of Haiti genetically distinct from each other?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
@@ -88,11 +89,11 @@ Remember - a monophyletic group is a group which consists of all the descendents
 You can think of this another way, looking at the data, if you were given another Haitian isolate with no geographical information, how confident would you be in your prediction of it’s geographic origin?
 </div><br>
 
-**Question 13:** Where is the closest neighbour of the Haiti genomes from?
+**Question 9:** Where is the closest neighbour of the Haiti genomes from?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-**Question 14:** Write a short paragraph, summarising your results for the public health officials.
+**Question 10:** Write a short paragraph, summarising your results for the public health officials.
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
@@ -102,60 +103,32 @@ Inject 2 - Using the feedback we gave them on the likely origin of the *V. chole
 
 Therefore, you have decided to search the public databases for all sequences from Nepal and Bangladesh and re-run the analysis, including these genomes. This will provide extra context for the Haitian outbreak and increase our certainty of what is happening.
 
-On your CLIMB instance:
-
-* Navigate to `/home/ubuntu/data/day-4/outbreak_practical/dataset2`. 
-
-* Run `ls -lh` in this directory. This directory contains the alignment of all the high quality variable sites found in the core genome for 19 *V. cholerae* genomes from Haiti and 101 other *V. cholerae* genomes from around the world by `snippy-core`. When deciding which genomes to include, we have focussed on isolates from the Indian sub-continent.
-
-* Run IQ-TREE to generate a Maximum Likelihood tree
-
-<pre class="bash">
-iqtree -s dataset2.aln -nt AUTO -bb 1000
-</pre>
-
 <div class="alert alert-info">
-* Note: It takes around 5 minutes. 
-* Hint: be like a real bioinformatician, use this time to check twitter
+* I've processed some additional genomic datasets and combined them with intial set you've been working with.
+* I then re-calculated a new phylogenetic tree from this larger dataset.
 </div>
 
-**Question 1:** What is different between this command and the last time we ran `iqtree`? What does this option mean?
+You can download the tree from [here](https://www.dropbox.com/s/ugni3gbt8uargbf/dataset2.aln.pretty.nwk?dl=0), the annotation for figtree from [here](https://www.dropbox.com/s/ylepng6vb7y71n5/annotation_figtree.txt?dl=0) and the annotation for phandango from [here](https://www.dropbox.com/s/2rwkqf3di7x0l7u/annotation_phandango.csv?dl=0)
+
+* Open `dataset2.aln.pretty.nwk` with `FigTree`.
+
+* In `FigTree`, go to `File -> Import annotations` in the menu bar, and navigate to the `annotation_figtree.txt` file you downloaded. Select this file and press open. Then in the main `FigTree` window, go to `Tip Labels`, and in the drop down `Display` menu, select `ANNOT`. You should now be able to see tip labels containing information about continent, country and year on the tree.
+
+**Question 1:** `SRR308716` was the most closely related non-Haitian genome to the Haiti outbreak strains in `dataset1`. Is it still the most closely related genome?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-* Then we need to run a couple of commands to convert the tree to a good format to visualise (we will midpoint root the tree and order the nodes to be descending). For this, we will use a custom python script which uses the [ete3](http://etetoolkit.org/docs/latest/index.html) module and the very useful [Newick Utilities](http://cegg.unige.ch/newick_utils) package.
-
-<pre class="bash">
-cat dataset2.aln.treefile | python ~/scripts/midpoint_root_tree.py | nw_order -c n - > dataset2.aln.pretty.tree
-</pre>
-
-The `midpoint_root_tree.py` script is available [here](https://gist.github.com/flashton2003/a2633c40ab683c0a02191344652ba52e).
-
-* On your local machine, download FigTree from [here](https://github.com/rambaut/figtree/releases/download/v1.4.4/FigTree.v1.4.4.zip), and install it.
-
-* Then download the `dataset2.aln.pretty.tree` onto your local computer, along with `annotation_figtree.txt` and `annotation_phandango.csv` and open it with `FigTree`.
-
-* In `FigTree`, go to `File -> Import annotations` in the menu bar, and navigate to the `annotation_figtree.txt` file. Select this file and press open. Then in the main `FigTree` window, go to `Tip Labels`, and in the drop down `Display` menu, select `ANNOT`. You should now be able to see tip labels containing information about continent, country and year on the tree.
-
-**Question 2:** `SRR308716` was the most closely related non-Haitian genome to the Haiti outbreak strains in `dataset1`. Is it still the most closely related genome?
+**Question 2:** Do all the genomes from Nepal form a monophyletic group? What does this tell you about cholera in Nepal?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-**Question 3:** Do all the genomes from Nepal form a monophyletic group? What does this tell you about cholera in Nepal?
-
-<textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
-
-**Question 4:** What does the root of the tree represent?
+**Question 3:** What does the root of the tree represent?
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
 * On the lefthand side of the `Figtree` interface, tick the box which says 'Node labels', click the arrow to enable you to select 'label' from the dropdown `Display` menu. This will place the bootstraps on the nodes of the tree.
 
-**Question 5:** Does adding in the bootstraps alter your interpretation at all?
-
-<textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
-
-**Question 6:**  What is the impact of this extra context on your report to the public health doctors? Write a short paragraph reporting your new findings.
+**Question 4:**  What is the impact of this extra context on your report to the public health doctors? Write a short paragraph reporting your new findings.
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
@@ -169,13 +142,6 @@ The `midpoint_root_tree.py` script is available [here](https://gist.github.com/f
 Comes from this formula: (`distance between nodes` / `total tree length`) * `alignment length`
 </div><br>
 
-**Advanced question 2:** How does this compare with `disty`?
-
-<textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
-
-<div class="toggle"><button>Hint</button>
- `grep -A 1 SRR308691 dataset2.aln > tmp.fa; grep -A 1 SRR308715 dataset2.aln >> tmp.fa; disty tmp.fa`
-</div><br>
 
 ## Notes {-}
 
