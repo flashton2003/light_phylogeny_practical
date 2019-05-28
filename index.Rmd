@@ -60,9 +60,9 @@ ALERT - READ ME
 * In the interests of simplicity, I've done this for you and you can download the finished tree from below
 </div>
 
-Now, download the phylogenetic tree from [here](https://www.dropbox.com/s/ft731tm7lmtkc7c/dataset1.aln.nwk?dl=0), and a meta-data file with information on the geographic location from [here](https://www.dropbox.com/s/xjxldv8ds0wai40/geog_loc_microreact.csv?dl=0).
+Now, download the phylogenetic tree from [here](https://www.dropbox.com/s/ft731tm7lmtkc7c/dataset1.aln.nwk?dl=0){target="_blank"} , and a meta-data file with information on the geographic location from [here](https://www.dropbox.com/s/xjxldv8ds0wai40/geog_loc_microreact.csv?dl=0){target="_blank"} .
 
-* Navigate to https://microreact.org/upload and upload the `dataset1.aln.nwk` file and the `geog_loc_microreact.csv` file. The microreact interface is hopefully quite intuitive, spend a few minutes becoming familiar with the various options and buttons. Microreact is an ideal way to investigate relationships between phylogeny and geography (aka phylogeographical relationships). 
+* Navigate to https://microreact.org/upload{target="_blank"}  and upload the `dataset1.aln.nwk` file and the `geog_loc_microreact.csv` file. The microreact interface is hopefully quite intuitive, spend a few minutes becoming familiar with the various options and buttons. Microreact is an ideal way to investigate relationships between phylogeny and geography (aka phylogeographical relationships). 
 
 **Question/task 6:** Identify the Haiti outbreak genomes in the tree. 
 
@@ -138,7 +138,7 @@ You can download the tree from [here](https://www.dropbox.com/s/ugni3gbt8uargbf/
 
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
-**Extra task:**  Use the `phandango` tool to visualise the meta-data in a more interesting way. Navigate to [here](https://jameshadfield.github.io/phandango/#/). And drag and drop your tree and the `annotation_phandango.csv` file onto the web page. Pressing `k` will bring up the key. Further instructions are [here](https://github.com/jameshadfield/phandango/wiki).
+**Extra task:**  Use the `phandango` tool to visualise the meta-data in a more interesting way. Navigate to [here](https://jameshadfield.github.io/phandango/#/){target="_blank"} . And drag and drop your tree and the `annotation_phandango.csv` file onto the web page. Pressing `k` will bring up the key. Further instructions are [here](https://github.com/jameshadfield/phandango/wiki){target="_blank"} .
 
 **Advanced question 1:** Using the phylogenetic tree, estimate the SNP distance between `SRR308691` and  `SRR308715`. A piece of paper might help you estimate the distance between the two tips. Remember you have to go from one tip, down to the MRCA, back to the other tip. Only ‘horizontal’ distance (if you are viewing the tree in rectangular format) counts. The other information you need to calculate this is the tree length, which is 0.029 (from IQTREE log) and the alignment length, which is 987 bp (calculated by `bioawk -c fastx '{ print $name, length($seq) }' < dataset2.aln`).
 
@@ -151,7 +151,7 @@ Comes from this formula: (`distance between nodes` / `total tree length`) * `ali
 
 ## Notes {-}
 
-For more information on *V. cholera* genomics you can see [here](https://www.ncbi.nlm.nih.gov/pubmed/29123068). There are multiple papers on the genomics of the Haiti cholera outbreak, I leaned on [this](https://mbio.asm.org/content/5/6/e01721-14) one to write this material.
+For more information on *V. cholera* genomics you can see [here](https://www.ncbi.nlm.nih.gov/pubmed/29123068){target="_blank"} . There are multiple papers on the genomics of the Haiti cholera outbreak, I leaned on [this](https://mbio.asm.org/content/5/6/e01721-14){target="_blank"}  one to write this material.
 
 
 <script>
