@@ -38,7 +38,7 @@ From using Google, or your microbiology knowledge about cholera:
 
 Here is the pairwise SNP distance histogram for the genomes in our current collection:
 
-INSERT HISTOGRAM/OUTPUT OF HISTO.PY
+![SNP pairwise distance histogram](https://imgur.com/KDGGsue)
 
 **Question 5:** What is the median pairwise SNP distance? How well do you think this describes the dataset?
 
