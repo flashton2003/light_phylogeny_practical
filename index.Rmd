@@ -53,6 +53,7 @@ Here is the pairwise SNP distance histogram for the genomes in our current colle
 <textarea id="name" name="name" cols="100" rows="3" placeholder="You can input your answer here..."></textarea>
 
 <div class="alert alert-info">
+ALERT - READ ME
 * At this point, you have to imagine that you've run an IQ-TREE command to 'convert' your sequence files into a phylogenetic tree.
 * In the interests of simplicity, I've done this for you and you can download the finished tree from below
 </div>
@@ -104,11 +105,12 @@ Inject 2 - Using the feedback we gave them on the likely origin of the *V. chole
 Therefore, you have decided to search the public databases for all sequences from Nepal and Bangladesh and re-run the analysis, including these genomes. This will provide extra context for the Haitian outbreak and increase our certainty of what is happening.
 
 <div class="alert alert-info">
+ALERT - READ ME
 * I've processed some additional genomic datasets and combined them with intial set you've been working with.
 * I then re-calculated a new phylogenetic tree from this larger dataset.
 </div>
 
-You can download the tree from [here](https://www.dropbox.com/s/ugni3gbt8uargbf/dataset2.aln.pretty.nwk?dl=0), the annotation for figtree from [here](https://www.dropbox.com/s/ylepng6vb7y71n5/annotation_figtree.txt?dl=0) and the annotation for phandango from [here](https://www.dropbox.com/s/2rwkqf3di7x0l7u/annotation_phandango.csv?dl=0)
+You can download the tree from [here](https://www.dropbox.com/s/ugni3gbt8uargbf/dataset2.aln.pretty.nwk?dl=0){target="_blank"}, the annotation for figtree from [here](https://www.dropbox.com/s/ylepng6vb7y71n5/annotation_figtree.txt?dl=0){target="_blank"} and the annotation for phandango from [here](https://www.dropbox.com/s/2rwkqf3di7x0l7u/annotation_phandango.csv?dl=0){target="_blank"}.
 
 * Open `dataset2.aln.pretty.nwk` with `FigTree`.
 
